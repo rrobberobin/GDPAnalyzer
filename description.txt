@@ -1,0 +1,31 @@
+
+
+This program displays and saves GDP per capita data for different countries and the data against the size of the countries.
+First the user chooses between showing the GDP per capita for a specific year or the growth on a longer period. 
+Next the data is chosen to be PPP (Purchasing power parity) or normal.
+Then either the data is compared against the area or the population of a country. The data is saved as a csv file.
+
+If the user chose to look at growth data, the program now plots the growth data against the size of countries.
+If the user chose to look at the GDP for a specific year, he now chooses the year and the scaling of the plots 
+(Either linear scale on y and logarithmic scale on x, or logarithmic scale on both). Lastly the program plots the data.
+
+I have imported worldwide gdp, population and areal data.
+The data is from the world bank: ("https://data.worldbank.org")
+
+Comparing the GDP per capita against population and area, we could get a hint of what the most economically effective country size is.
+After having run the program and looked at the plots:
+
+It seems like smaller countries are a little better at creating welfare, in terms of GDP per capita.
+This could be our hypothesis for future research, but we would need to look more at the fundamentals of the data and what factors are at play.
+Bigger countries seem to have had higher growth during the last 30 years. If we do believe that bigger countries are poorer, a higher growth could make sense.
+Maybe open trade has is starting to flat out wealth/income distributions. Money is flowing from richer countries to cheaper countries.
+
+The main file is responsible for running the program. DataHandler contains classes that make calculations, combine dataFrames,
+and save the dataFrames into csv files. The errorCheck file contains a class for error handling. 
+The class contains a function which can check if the inputted years are valid. Later we could add more functions.
+The plotting file contains the tools for plotting the data. One class plots GDP per capita data and another plots GDP per capita growth.
+The paths file includes all data file paths.
+
+Some of the classes I created could be seen as unnecessary.
+However, they were created extendability in mind and they give developers the possibility to easily extend the project.
+
