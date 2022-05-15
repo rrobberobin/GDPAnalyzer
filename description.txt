@@ -18,7 +18,7 @@ After having run the program and looked at the plots:
 It seems like smaller countries are a little better at creating welfare, in terms of GDP per capita.
 This could be our hypothesis for future research, but we would need to look more at the fundamentals of the data and what factors are at play.
 Bigger countries seem to have had higher growth during the last 30 years. If we do believe that bigger countries are poorer, a higher growth could make sense.
-Maybe open trade has is starting to flat out wealth/income distributions. Money is flowing from richer countries to cheaper countries.
+Maybe open trade is starting to flat out wealth/income distributions. Money is flowing from richer countries to cheaper countries.
 
 The main file is responsible for running the program. DataHandler contains classes that make calculations, combine dataFrames,
 and save the dataFrames into csv files. The errorCheck file contains a class for error handling. 
@@ -27,5 +27,5 @@ The plotting file contains the tools for plotting the data. One class plots GDP 
 The paths file includes all data file paths.
 
 Some of the classes I created could be seen as unnecessary.
-However, they were created extendability in mind and they give developers the possibility to easily extend the project.
+However, they were created extendability in mind to give developers the possibility to easily extend the project.
 
